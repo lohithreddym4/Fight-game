@@ -1,0 +1,50 @@
+<html >
+    <head>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    </head>
+    
+    <body>
+    <div class="body">
+        <audio src="../sfx/three-two-one-fight-deep-voice-38382.mp3" autoplay></audio>
+        <div class="a" >
+            <div id="p2score" class="score">0</div>
+            <img id="p1body" src="../img/Z6W4.gif">
+            <div id="p1buttons">
+                <span>Q:<button id="q" class="hitbutton h1">Punch</button></span>
+                <audio id="p2" src="../sfx/punch-140236.mp3"></audio>
+                <span>A:<button id="h1" class="healbutton heal h1">Heal</button></span>
+                <audio id="hel" src="../sfx/heal.mp3"></audio>
+            </div>
+        </div>
+        
+        <img id="fist1" src="../img/fist.png" height=40>
+        <img id="fist2" src="../img/fist.png" height=40>
+        <div id="buttons">
+
+        </div>
+        <form>
+            <button id="newgame" class="newgamecolor">New Game</button>
+        </form>
+        <button id="home" type="button" onclick="homeFun()"  class="newgamecolor">Home</button>
+        <div class="b"> 
+            <div id="p2score" class="score">0</div>
+            <img id="p2body" src="../img/p2.gif">
+            <div id="p2buttons">
+                <span>P:<button id="p" class="hitbutton h2">Punch</button></span>
+                <audio id="p1" src="../sfx/punch-2-123106.mp3"></audio>
+                <span>L:<button id="h2" class="healbutton heal h2">Heal</button></span>
+            </div>
+        </div>
+            <audio id="victory" src="../sfx/victory.mp3"></audio>
+    </div>
+    <div id="gwin">
+        GrayScale Won!
+    </div>
+    <div id="cwin">
+        Color Won!
+    </div>
+        <script src="../js/script.js"></script>
+    </body>
+    
+</html>

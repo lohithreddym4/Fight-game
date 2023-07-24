@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+    font-family: 'VT323', monospace;
+}
+#p2body{
+    transform: rotatey(180deg);
+    margin-left: 120px;
+    height:125px;
+    position:relative;
+    left: -50px;
+}
+#p1body{
+    filter: grayscale(1);
+}
+.a,.b,#p2body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hitbutton{
+    background-image: linear-gradient(red, yellow);
+    border: 1px solid;
+    border-radius: 2px;
+    height:30px;
+}
+.healbutton{
+    background-image: radial-gradient(rgb(6, 222, 16),yellow);
+    border: 1px solid;
+    border-radius: 2px;
+    height:30px;
+}
+.body{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#p1buttons,#p2buttons{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#p1buttons{
+    filter: grayscale(1);
+}
+
+.hitbutton:active,.healbutton:active{
+    animation: presseffect2 200ms linear 1;
+}
+.h1:active,.h2:active,.newgame:active,.newgamecolor:active{
+    animation: presseffect 200ms linear 1;
+
+}
+span{
+    height:50px;
+}
+
+@keyframes presseffect{
+    to{
+        filter:opacity(.5)
+    }
+}
+@keyframes presseffect2{
+    to{
+        filter:grayscale(1)
+    }
+}
+button{
+    outline: none;
+    cursor: pointer;
+    width:70px;
+}
+html{
+    color:white;
+    background-color: black;
+}
+.score{
+    margin-bottom: 50px;
+    font-size: 70px
+}
+#cwin,#gwin{
+    font-size: 70px;
+    color: red;
+    display: none;
+    animation: win 200ms linear infinite;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes win{
+    0%{
+        filter: brightness(0);
+        filter: brightness(0);
+    }
+}
+.a,.b{
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newgamecolor,#home{
+    border: 1px solid aliceblue;
+    border-radius: 2px;
+    height:30px;
+    color: rgb(0, 28, 52);
+    display: none;
+    background-image: radial-gradient(rgb(247, 68, 68),black);
+}
+#press{
+    color:rgb(255, 13, 0);
+    font-size: 50px;
+    animation: win 700ms linear infinite;
+}
+#logo{
+    height:400px;
+}
+#press{
+    position: absolute;
+    top: 300px;
+}
+#fist1{
+    position:relative;
+    top:-70px;
+    left:50px;
+    z-index:1 ;
+    animation: fist1 300ms ease infinite;
+    display:none;
+}
+#fist2{
+    transform: rotatey(180deg);
+    position:relative;
+    top:-70px;
+    right:40px;
+    z-index: 1;
+    animation: fist2 300ms ease infinite;
+    display:none;
+}
+@keyframes fist1{
+    to{
+        top:-80px;
+        left: 130px;
+    }
+}
+@keyframes fist2{
+    to{
+        top:-80px;
+        right: 100px;
+    }
+}
+#fist1{
+    filter: grayscale(1);
+}
+#chota{
+    position: absolute;
+    font-size: 100px;
+    top:-80px;
+    right:480px;
+
+}
+form{
+    display:contents;
+}
+button{
+    margin:10px;
+}
+#home{
+    display: none;
+}
